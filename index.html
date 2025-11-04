@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cauculadora</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="cauculator">
         <div class="display" id="display">
-            <button class="button ligth-gray">C</button>
-            <button class="button ligth-gray">%</button>
-            <button class="button ligth-gray">.</button>
-            <button class="button orange">/</button>
-            <button class="button dark-gray">7</button>
-            <button class="button dark-gray">8</button>
-            <button class="button dark-gray">9</button>
-            <button class="button orange">*</button>
-            <button class="button dark-gray">4</button>
-            <button class="button dark-gray">5</button>
-            <button class="button dark-gray">6</button>
-             <button class="button orange">-</button>
-             <button class="button dark-gray">1</button>
-            <button class="button dark-gray">2</button>
-            <button class="button dark-gray">3</button>
-             <button class="button orange">+</button>
-             <button class="button dark-gray wide">0</button>
-             <button class="button orange">=</button>
+            <button class="button ligth-gray" oneclick ="clearDisplay()">C</button>
+            <button class="button ligth-gray" onclick="appendNumber('%')" >%</button>
+            <button class="button ligth-gray" onclick="appendNumber('.')">.</button>
+            <button class="button orange"onclick="appendNumber('/')">/</button>
+            <button class="button dark-gray" onclick="appendNumber('7')">7</button>
+            <button class="button dark-gray" onclick="appendNumber('8')">8</button>
+            <button class="button dark-gray" onclick="appendNumber('9')">9</button>
+            <button class="button orange"onclick="appendNumber('*')">*</button>
+            <button class="button dark-gray" onclick="appendNumber('4')">4</button>
+            <button class="button dark-gray" onclick="appendNumber('5')">5</button>
+            <button class="button dark-gray" onclick="appendNumber('6')">6</button>
+            <button class="button orange"onclick="appendNumber('-')">-</button>
+            <button class="button dark-gray" onclick="appendNumber('1')">1</button>
+            <button class="button dark-gray" onclick="appendNumber('2')">2</button>
+            <button class="button dark-gray" onclick="appendNumber('3')">3</button>
+            <button class="button orange"onclick="appendNumber('+')">+</button>
+            <button class="button dark-gray wide" onclick="appendNumber('0')">0</button>
+            <button class="button orange" oneclick = "cauculate()">=</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
